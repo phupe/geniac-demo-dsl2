@@ -22,8 +22,8 @@ of the license and that you accept its terms.
 
 process alpine {
   label 'alpine'
-  label 'smallMem'
-  label 'smallCpu'
+  label 'minMem'
+  label 'minCpu'
   publishDir "${params.outDir}/alpine", mode: 'copy'
 
   input:
