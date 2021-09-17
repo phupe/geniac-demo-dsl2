@@ -63,7 +63,7 @@ def helpMessage() {
     --outDir [file]               The output directory where the results will be saved
     -name [str]                   Name for the pipeline run. If not specified, Nextflow will automatically generate a random mnemonic
  
-  =======================================================
+  ======================================================================
   Available Profiles
 
     -profile test                Set up the test dataset
@@ -264,7 +264,7 @@ summary['Working dir']    = workflow.workDir
 summary['Output dir']     = params.outDir
 summary['Config Profile'] = workflow.profile
 log.info summary.collect { k,v -> "${k.padRight(15)}: $v" }.join("\n")
-log.info "========================================="
+log.info "======================================================="
 
 // ADD YOUR NEXTFLOW SUBWORFLOWS HERE
 
