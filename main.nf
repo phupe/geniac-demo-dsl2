@@ -116,7 +116,6 @@ if( !(workflow.runName ==~ /[a-z]+_[a-z]+/) ){
 // Stage config files
 multiqcConfigCh = Channel.fromPath(params.multiqcConfig)
 outputDocsCh = file("$projectDir/docs/output.md", checkIfExists: true)
-outputDocsImagesCh = file("$projectDir/docs/images/", checkIfExists: true)
 
 /************
  * CHANNELS *
@@ -325,7 +324,6 @@ workflow {
       ****************/
      outputDocumentation(
        outputDocsCh,
-       outputDocsImagesCh
      )
 }
 
