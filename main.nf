@@ -62,7 +62,7 @@ def helpMessage() {
   Other options:
     --outDir [file]               The output directory where the results will be saved
     -name [str]                   Name for the pipeline run. If not specified, Nextflow will automatically generate a random mnemonic
- 
+
   ======================================================================
   Available Profiles
 
@@ -322,9 +322,7 @@ workflow {
      /****************
       * Sub-routines *
       ****************/
-     outputDocumentation(
-       outputDocsCh,
-     )
+     outputDocumentation(outputDocsCh)
 }
 
 workflow.onComplete {
